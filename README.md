@@ -1,5 +1,7 @@
 # storybook 学习笔记
 
+storybook 学习笔记
+
 ## 测试
 
 ### 自动化测试
@@ -18,3 +20,5 @@ initStoryshots()
 ```
 
 > 使用 vitest 报错：jest is not defined.
+
+## 部署

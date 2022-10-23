@@ -36,5 +36,7 @@
     "typescript": "^4.8.4",
     "vite": "^3.1.8",
     "vitest": "^0.24.3"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "react-ts-storybook@0.0.0"
 }
