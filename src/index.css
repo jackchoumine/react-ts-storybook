@@ -457,3 +457,9 @@ textarea {
   vertical-align: top;
   max-width: 100%;
 }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
