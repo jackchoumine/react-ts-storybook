@@ -2,11 +2,11 @@
  * @Description :
  * @Date        : 2022-10-23 21:43:43 +0800
  * @Author      : JackChou
- * @LastEditTime: 2022-10-23 23:50:48 +0800
+ * @LastEditTime: 2022-10-23 23:44:18 +0800
  * @LastEditors : JackChou
  */
 import React from 'react'
-import type { Props, ITask } from './Task'
+import type { TaskProps, ITask } from './Task'
 import Task from './Task'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
@@ -15,7 +15,7 @@ export default {
   component: Task,
 } as ComponentMeta<typeof Task>
 
-const Template: ComponentStory<typeof Task> = (args: Props) => <Task {...args} />
+const Template: ComponentStory<typeof Task> = (args: TaskProps) => <Task {...args} />
 
 export const Default = Template.bind({})
 
@@ -23,7 +23,6 @@ const defaultTask: ITask = {
   title: 'Task',
   id: '1',
 }
-
 Default.args = {
   task: defaultTask,
 }

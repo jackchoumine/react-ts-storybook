@@ -2,7 +2,7 @@
  * @Description :
  * @Date        : 2022-10-23 21:43:43 +0800
  * @Author      : JackChou
- * @LastEditTime: 2022-10-23 22:45:04 +0800
+ * @LastEditTime: 2022-10-23 23:58:30 +0800
  * @LastEditors : JackChou
  */
 import React from 'react'
@@ -14,13 +14,13 @@ export interface ITask {
   updateAt?: Date
 }
 
-export interface Props {
+export interface TaskProps {
   task: ITask
   onArchive?: (id: ITask['id']) => void
-  onPinTask?: (id: ITask['id']) => void
+  onPin?: (id: ITask['id']) => void
 }
 
-const Task: React.FC<Props> = ({ task: { id, title, state }, onArchive, onPinTask }) => {
+const Task: React.FC<TaskProps> = ({ task: { id, title, state }, onArchive, onPin }) => {
   const checked = state === 'TASK_ARCHIVED'
   return (
     <div className={`list-item ${state}`}>
@@ -33,7 +33,7 @@ const Task: React.FC<Props> = ({ task: { id, title, state }, onArchive, onPinTas
       </div>
       <div className='actions' onClick={event => event.stopPropagation()}>
         {state !== 'TASK_ARCHIVED' && (
-          <a onClick={() => onPinTask && onPinTask(id)}>
+          <a onClick={() => onPin && onPin(id)}>
             <span className='icon-star'></span>
           </a>
         )}
