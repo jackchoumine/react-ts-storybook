@@ -2,7 +2,7 @@
  * @Description :
  * @Date        : 2022-10-23 21:43:43 +0800
  * @Author      : JackChou
- * @LastEditTime: 2022-10-23 23:44:18 +0800
+ * @LastEditTime: 2022-10-23 23:50:48 +0800
  * @LastEditors : JackChou
  */
 import React from 'react'
@@ -22,8 +22,8 @@ export const Default = Template.bind({})
 const defaultTask: ITask = {
   title: 'Task',
   id: '1',
-  state: '',
 }
+
 Default.args = {
   task: defaultTask,
 }
